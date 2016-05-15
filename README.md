@@ -37,6 +37,11 @@ For example, to build the test app:
     gcc cJSON.c test.c -o test -lm
     ./test
 
+NOTE: linking in eclipse for math library
+
+1. Right click on your project in Project Explorer and select Properties.
+2. Go to C\C++ Build -> Settings -> Tool Settings -> Gcc Linker -> Libraries and click on green plus button to add a new library. When the dialog pops up, write m, and Eclipse will automatically add the -Im flag.
+
 As a library, cJSON exists to take away as much legwork as it can, but not get in your way.
 As a point of pragmatism (i.e. ignoring the truth), I'm going to say that you can use it
 in one of two modes: Auto and Manual. Let's have a quick run-through.
